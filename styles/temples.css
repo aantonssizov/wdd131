@@ -21,7 +21,7 @@ span.title.hidden,
     display: flex;
     flex-direction: column;
     gap: 16px;
-    background-color: var(--auburn);
+    background-color: var(--blood-red);
     width: 100%;
 }
 

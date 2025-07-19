@@ -20,11 +20,11 @@ figure {
 }
 
 :root {
-    --auburn: #9e2b25ff;
-    --space-cadet: #1c1f33ff;
-    --xanthous: #f4b942ff;
-    --rose-quartz: #ada8b6ff;
-    --alice-blue: #eff7ffff;
+    --blood-red: #6C0903;
+    --space-cadet: #1c1f33;
+    --xanthous: #f4b942;
+    --rose-quartz: #ada8b6;
+    --alice-blue: #effaff;
 }
 
 .roboto-normal {
@@ -45,7 +45,7 @@ figure {
 header,
 footer {
     width: 100%;
-    background-color: var(--auburn);
+    background-color: var(--blood-red);
     box-sizing: border-box;
 }
 
