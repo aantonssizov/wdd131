@@ -1,0 +1,120 @@
+@import "base.css";
+
+:root {
+    --ukraine-blue: #0057B7;
+    --ukraine-blue-little-transparency: #004B9EBF;
+    --ukraine-yellow: #FFDD00;
+}
+
+header,
+footer {
+    background-color: var(--ukraine-yellow);
+}
+
+header {
+    padding: 24px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+footer p {
+    color: black;
+}
+
+span#lastModified {
+    color: var(--blood-red);
+}
+
+.weather-icon {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main>picture img {
+    width: 100%;
+}
+
+hr.ukraine-bottom-line {
+    height: 24px;
+    border: none;
+    background-color: var(--ukraine-blue);
+    margin: 0;
+}
+
+main aside {
+    text-align: center;
+}
+
+main aside h2 {
+    margin: 16px;
+}
+
+main aside>img {
+    margin-bottom: 16px;
+}
+
+main>aside:first-of-type {
+    border-bottom: 1px solid var(--rose-quartz);
+}
+
+p.label {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 4px;
+    align-items: end;
+    margin-bottom: 8px;
+}
+
+p.label>span.label-title {
+    font-weight: bold;
+    text-align: end;
+}
+
+p.label>span.label-content {
+    text-align: start;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        position: relative;
+    }
+
+    main>aside {
+        padding: 8px;
+        background-color: rgba(255, 255, 255, .85);
+    }
+
+    main aside>h2 {
+        background-color: var(--ukraine-blue-little-transparency);
+        margin-left: -24px;
+        color: white;
+    }
+
+    main>aside:first-of-type {
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        border: none;
+    }
+
+    main>aside:last-of-type {
+        position: absolute;
+        bottom: 24px;
+        right: 24px;
+    }
+
+    main>aside:last-of-type>img {
+        display: none;
+    }
+
+    main>aside:last-of-type>h2::after {
+        content: "🌦️";
+    }
+}
