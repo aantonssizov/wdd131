@@ -1,0 +1,19 @@
+img {
+    display: block;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: black;
+    animation-name: fade;
+    animation-duration: 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0.25;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
