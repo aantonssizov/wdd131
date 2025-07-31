@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --dark-purple: #240115;
+    --upsdell-red: #AC1E2B;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--dark-purple);
+    font-family: 'Playwrite HU', cursive;
+}
+
+p {
+    color: var(--upsdell-red);
+
+}
