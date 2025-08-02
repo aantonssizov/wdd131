@@ -1,0 +1,18 @@
+@import "base.css";
+
+header h1 {
+    text-align: center;
+    color: var(--alice-blue);
+}
+
+main {
+    max-width: 400px;
+    width: 100%;
+    background-color: var(--space-cadet);
+    color: var(--alice-blue);
+    margin: 8px auto;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+}

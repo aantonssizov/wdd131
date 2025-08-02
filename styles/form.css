@@ -1,0 +1,61 @@
+@import "base.css";
+
+header h1 {
+    text-align: center;
+    color: var(--alice-blue);
+}
+
+main {
+    max-width: 400px;
+    width: 100%;
+    background-color: var(--space-cadet);
+    color: var(--alice-blue);
+    margin: 8px auto;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+}
+
+label.radio-label {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-items: center;
+}
+
+.form-field,
+.form-field-container {
+    width: 100%;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.form-field-container:has(label.radio-label) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.optional-input {
+    color: var(--xanthous);
+}
+
+label:has(input[type=checkbox]) {
+    display: flex;
+    align-items: center;
+}
+
+input[type=checkbox] {
+    width: 24px;
+    height: 24px;
+}
+
+input[type=submit] {
+    background-color: var(--blood-red);
+    color: var(--alice-blue);
+    border: none;
+}
