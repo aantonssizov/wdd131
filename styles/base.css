@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure {
+    margin: 0;
+}
+
+:root {
+    --blood-red: #6C0903;
+    --space-cadet: #1c1f33;
+    --xanthous: #f4b942;
+    --rose-quartz: #ada8b6;
+    --alice-blue: #effaff;
+}
+
+.roboto-normal {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.fugaz-one-regular {
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header,
+footer {
+    width: 100%;
+    background-color: var(--blood-red);
+    box-sizing: border-box;
+}
+
+footer {
+    padding: 24px;
+}
+
+footer p {
+    text-align: center;
+    color: var(--alice-blue);
+}
+
+#lastModified {
+    color: var(--xanthous);
+}

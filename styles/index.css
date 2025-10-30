@@ -1,0 +1,94 @@
+@import "base.css";
+
+span#course-title {
+    display: block;
+    text-align: center;
+    padding: 24px;
+    font-size: larger;
+    color: var(--alice-blue);
+    font-weight: 600;
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--space-cadet);
+    padding: 16px;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    color: var(--alice-blue);
+}
+
+.main-navigation a:hover {
+    color: var(--rose-quartz);
+    transition: color 0.1s ease;
+}
+
+main {
+    width: 1024px;
+    margin: 16px auto;
+
+}
+
+main h1 {
+    text-align: center;
+}
+
+.main-flex {
+    display: flex;
+    gap: 16px;
+}
+
+.main-flex .webdev-resources-card {
+    flex-shrink: 0;
+    flex-basis: 25%;
+}
+
+.flag img {
+    width: 200px;
+    height: 150px;
+}
+
+.my-picture {
+    width: 150px;
+    height: 200px;
+}
+
+.horizontal-card {
+    display: flex;
+    gap: 16px;
+}
+
+.card {
+    border: 1px solid var(--space-cadet);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-title {
+    text-align: center;
+    background-color: var(--blood-red);
+    color: var(--alice-blue);
+    padding: 16px;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+h3#hometown {
+    text-align: center;
+    border-bottom: 1px solid var(--space-cadet);
+    margin: 16px;
+}
+
+.hometown-description {
+    display: flex;
+    gap: 16px;
+}
+
+.flag-title {
+    font-style: italic;
+}

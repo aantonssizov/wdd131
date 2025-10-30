@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Anton Syzov - Home Page">
+    <meta name="author" content="Anton Syzov">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>WDD 131 - Dynamic Web Fundamentals - Anton Syzov</title>
+</head>
+
+<body>
+    <header>
+        <span id="course-title" class="roboto-normal">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav class="main-navigation roboto-normal">
+            <a href="https://www.linkedin.com/in/anton-syzov-451b49160">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="fugaz-one-regular">Anton Syzov</h1>
+        <div class="main-flex">
+
+            <section class="card roboto-normal about-me-card">
+                <h2 class="card-title">About Me</h2>
+                <div class="card-content horizontal-card">
+                    <div class="about-me">
+                        <p>
+                            My name is Anton. I was born in Ukraine and now live in Germany. I love everything about
+                            languages, especially about Chinese. I love playing Go and reading books.
+                            I love meeting new people and explore this world.
+                        </p>
+                        <h3 id="hometown">Vinnytsia, Ukraine</h3>
+                        <div class="hometown-description">
+                            <div class="flag">
+                                <img src="images/flag-of-ukraine.png" alt="Ukraine's flag">
+                                <span class="flag-title">Official flag of Ukraine</span>
+                            </div>
+                            <p>Ukraine[a] is a country in Eastern Europe. It is the second-largest country in Europe
+                                after
+                                Russia, which borders it to
+                                the east and northeast.[b] Ukraine also borders Belarus to the north; Poland and
+                                Slovakia to
+                                the west; Hungary, Romania
+                                and Moldova[c] to the southwest; and the Black Sea and the Sea of Azov to the south and
+                                southeast.[d] Kyiv is the
+                                nation's capital and largest city, followed by Kharkiv, Odesa, and Dnipro. Ukraine's
+                                official language is Ukrainian. (Wikipedia)</p>
+                        </div>
+                    </div>
+                    <img src="images/my-picture.png" alt="My picture" class="my-picture">
+                </div>
+            </section>
+            <section class="card webdev-resources-card">
+                <h2 class="card-title">Web Dev Resources</h2>
+                <div class="card-content">
+                    <ul>
+                        <li><a href="https://dou.ua/">DOU</a></li>
+                        <li><a href="https://www.freecodecamp.org/">Free Code Camp</a></li>
+                        <li><a href="https://roadmap.sh/">Roadmap SH</a></li>
+                        <li><a href="https://caniuse.com/">Can I Use</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="roboto-normal">
+        <p><span id="currentyear"></span> - Anton Syzov - Germany</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+</body>
+
+</html>
