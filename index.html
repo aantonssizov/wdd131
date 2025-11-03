@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Anton Syzov - Home Page">
     <meta name="author" content="Anton Syzov">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
     <title>WDD 131 - Dynamic Web Fundamentals - Anton Syzov</title>
 </head>
 
@@ -22,7 +28,7 @@
     </header>
     <main>
         <h1 class="fugaz-one-regular">Anton Syzov</h1>
-        <div class="main-flex">
+        <div class="main-grid">
 
             <section class="card roboto-normal about-me-card">
                 <h2 class="card-title">About Me</h2>
@@ -71,7 +77,6 @@
         <p><span id="currentyear"></span> - Anton Syzov - Germany</p>
         <p><span id="lastModified"></span></p>
     </footer>
-    <script src="scripts/getdates.js" defer></script>
 </body>
 
 </html>
