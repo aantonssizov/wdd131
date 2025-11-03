@@ -27,7 +27,6 @@ figure {
 
 .roboto-normal {
     font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
@@ -47,6 +46,11 @@ footer {
     box-sizing: border-box;
 }
 
+header {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
 footer {
     padding: 24px;
 }
@@ -61,7 +65,6 @@ footer p {
 }
 
 span#course-title {
-    display: block;
     text-align: center;
     padding: 24px;
     font-size: larger;
