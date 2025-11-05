@@ -44,6 +44,7 @@ footer {
     width: 100%;
     background-color: var(--blood-red);
     box-sizing: border-box;
+    color: var(--alice-blue);
 }
 
 footer {
@@ -64,7 +65,6 @@ header {
     grid-template-columns: 1fr 48px;
     padding: 24px;
     align-items: center;
-    color: var(--alice-blue);
 }
 
 span.title {
