@@ -64,6 +64,7 @@ header {
     grid-template-columns: 1fr 48px;
     padding: 24px;
     align-items: center;
+    color: var(--alice-blue);
 }
 
 span.title {
