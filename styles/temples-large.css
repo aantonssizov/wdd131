@@ -8,13 +8,13 @@
         grid-template-columns: 1fr 2fr;
     }
 
-    .navigation {
+    nav.navigation {
         flex-direction: row;
         width: auto;
         justify-content: end;
     }
 
-    .navigation a:hover {
+    nav.navigation a:hover {
         color: var(--xanthous);
         transition: color 0.1s ease;
     }
