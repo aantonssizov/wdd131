@@ -1,0 +1,150 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    --ukraine-blue: #0057B7;
+    --ukraine-blue-little-transparency: #004B9EBF;
+    --ukraine-yellow: #FFDD00;
+    --blood-red: #6C0903;
+    --space-cadet: #1c1f33;
+    --xanthous: #f4b942;
+    --rose-quartz: #ada8b6;
+    --alice-blue: #effaff;
+}
+
+.roboto-normal {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.fugaz-one-regular {
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header,
+footer {
+    background-color: var(--ukraine-yellow);
+}
+
+header {
+    padding: 24px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+footer {
+    padding: 24px;
+}
+
+footer p {
+    text-align: center;
+    color: black;
+}
+
+span#lastModified {
+    color: var(--blood-red);
+}
+
+.weather-icon {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main>picture img {
+    width: 100%;
+}
+
+hr.ukraine-bottom-line {
+    height: 24px;
+    border: none;
+    background-color: var(--ukraine-blue);
+    margin: 0;
+}
+
+main aside {
+    text-align: center;
+}
+
+main aside h2 {
+    margin: 16px;
+}
+
+main aside>img {
+    margin-bottom: 16px;
+}
+
+main>aside:first-of-type {
+    border-bottom: 1px solid var(--rose-quartz);
+}
+
+p.label {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 4px;
+    align-items: end;
+    margin-bottom: 8px;
+}
+
+p.label>span.label-title {
+    font-weight: bold;
+    text-align: end;
+}
+
+p.label>span.label-content {
+    text-align: start;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        position: relative;
+    }
+
+    main>aside {
+        padding: 8px;
+        background-color: rgba(255, 255, 255, .85);
+    }
+
+    main aside>h2 {
+        background-color: var(--ukraine-blue-little-transparency);
+        margin-left: -24px;
+        color: white;
+    }
+
+    main>aside:first-of-type {
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        border: none;
+    }
+
+    main>aside:last-of-type {
+        position: absolute;
+        bottom: 24px;
+        right: 24px;
+    }
+
+    main>aside:last-of-type>img {
+        display: none;
+    }
+
+    main>aside:last-of-type>h2::after {
+        content: "🌦️";
+    }
+}

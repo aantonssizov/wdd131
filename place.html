@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="W03 Assignment: Country Page">
+    <meta name="author" content="Anton Syzov">
+    <title>W03 Assignment: Country Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body class="roboto-normal">
+    <header>
+        <h1>Ukraine</h1>
+    </header>
+    <hr class="ukraine-bottom-line">
+    <main>
+        <picture>
+            <source srcset="images/ukraine-large.webp" media="(min-width: 768px)">
+            <img src="images/ukraine-small.webp" alt="Ukraine">
+        </picture>
+        <aside>
+            <h2>Data</h2>
+            <p class="label">
+                <span class="label-title">Capital:</span><span class="label-content">Kyiv</span>
+            </p>
+            <p class="label">
+                <span class="label-title">Official Language:</span><span class="label-content">Ukrainian</span>
+            </p>
+            <p class="label">
+                <span class="label-title">Population:</span><span class="label-content">32,862,000</span>
+            </p>
+            <p class="label">
+                <span class="label-title">Area:</span><span class="label-content">603,628
+                    km<sup>2</sup></span>
+            </p>
+            <p class="label">
+                <span class="label-title">Currency:</span><span class="label-content">Hryvnia (₴)
+                    (UAH)</span>
+            </p>
+            <p class="label">
+                <span class="label-title">Internet TLD:</span><span class="label-content">.ua, .укр</span>
+            </p>
+            <p class="label">
+                <span class="label-title">Calling code:</span><span class="label-content">+380</span>
+            </p>
+        </aside>
+        <aside>
+            <h2>Weather <span class="weather-icon">🌦️</span></h2>
+            <img src="images/sunshine.svg" alt="Weather icon" width="64" height="64">
+            <p class="label">
+                <span class="label-title">Temperature:</span><span class="label-content">9°C</span>
+            </p>
+            <p class="label">
+                <span class="label-title">Conditions:</span><span class="label-content">Partly cloudy</span>
+            </p>
+            <p class="label">
+                <span class="label-title">Wind:</span><span class="label-content">8 km/h</span>
+            </p>
+            <p class="label">
+                <span class="label-title">Wind Chill:</span><span class="label-content" id="wind-chill"></span>
+            </p>
+        </aside>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> - Anton Syzov - Moldova</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
