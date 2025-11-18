@@ -205,3 +205,15 @@ const checkWidth = () => {
 window.addEventListener("resize", checkWidth);
 
 checkWidth();
+
+const homeBtn = document.querySelector("#home");
+const oldBtn = document.querySelector("#old");
+const newBtn = document.querySelector("#new");
+const largeBtn = document.querySelector("#large");
+const smallBtn = document.querySelector("#small");
+
+homeBtn.addEventListener('click', () => filterTemples('home'));
+oldBtn.addEventListener('click', () => filterTemples('old'));
+newBtn.addEventListener('click', () => filterTemples('new'));
+largeBtn.addEventListener('click', () => filterTemples('large'));
+smallBtn.addEventListener('click', () => filterTemples('small'));

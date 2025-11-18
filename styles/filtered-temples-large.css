@@ -7,18 +7,18 @@
         align-items: center;
     }
 
-    .navigation {
+    nav.navigation {
         flex-direction: row;
         width: auto;
     }
 
-    .navigation a:hover {
+    nav.navigation a:hover {
         color: var(--xanthous);
         transition: color 0.1s ease;
     }
 
     main {
-        grid-template-columns: 1fr, 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     main h1 {
@@ -28,7 +28,7 @@
 
 @media screen and (min-width: 1024px) {
     main {
-        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     main h1 {

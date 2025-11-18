@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W04 Assignment: Picture Album</title>
+    <title>W04 Assignment: Temple Album</title>
     <meta name="description"
         content="A page for reviewing different temples of the Church of Jesus Christ of Latter-day Saints.">
     <meta name="author" content="Anton Syzov">
@@ -15,19 +15,19 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/filtered-temples.css">
     <link rel="stylesheet" href="styles/filtered-temples-large.css">
-    <script src="scripts/getdates.js" defer></script>
     <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body class="roboto-normal">
     <header>
         <span class="title">Temple Album</span>
         <nav class="navigation">
-            <a href="#" onclick="filterTemples('home')">Home</a>
-            <a href="#" onclick="filterTemples('old')">Old</a>
-            <a href="#" onclick="filterTemples('new')">New</a>
-            <a href="#" onclick="filterTemples('large')">Large</a>
-            <a href="#" onclick="filterTemples('small')">Small</a>
+            <a href="#" id="home">Home</a>
+            <a href="#" id="old">Old</a>
+            <a href="#" id="new">New</a>
+            <a href="#" id="large">Large</a>
+            <a href="#" id="small">Small</a>
         </nav>
         <button class="menu-btn closed" aria-label="menu button"></button>
     </header>
