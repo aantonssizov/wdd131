@@ -1,0 +1,139 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure {
+    margin: 0;
+}
+
+:root {
+    --blood-red: #6C0903;
+    --space-cadet: #1c1f33;
+    --xanthous: #f4b942;
+    --rose-quartz: #ada8b6;
+    --alice-blue: #effaff;
+}
+
+.roboto-normal {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.fugaz-one-regular {
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    position: relative;
+    background-color: var(--blood-red);
+}
+
+span.title {
+    color: var(--alice-blue);
+    font-size: 24px;
+}
+
+span.title.hidden,
+.navigation.hidden {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.navigation a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--alice-blue);
+}
+
+.menu-btn {
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 24px;
+}
+
+.menu-btn.closed {
+    background-image: url("../images/burger-menu.svg");
+}
+
+.menu-btn.opened {
+    background-image: url("../images/close.svg");
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr, 1fr;
+    grid-auto-flow: row;
+    gap: 8px;
+    justify-items: center;
+    margin-bottom: 8px;
+    min-height: 800px;
+}
+
+h1 {
+    text-align: center;
+    grid-row: 1;
+}
+
+.temple-card {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid var(--blood-red);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.temple-card-label {
+    color: var(--blood-red);
+}
+
+img.temple-card-image {
+    max-width: 100%;
+    height: 250px;
+}
+
+footer {
+    padding: 24px;
+    background-color: var(--blood-red);
+}
+
+footer p {
+    text-align: center;
+    color: var(--alice-blue);
+}
+
+#lastModified {
+    color: var(--xanthous);
+}
