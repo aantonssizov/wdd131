@@ -29,16 +29,16 @@
             </select>
             <p>Overall Rating</p>
             <div class="form-field-container">
-                <label class="radio-label"><input type="radio" name="overall-rating" id="overall-rating-1" value="1"
-                        required>&star;</label>
-                <label class="radio-label"><input type="radio" name="overall-rating" id="overall-rating-2" value="2"
-                        required>&star;&star;</label>
-                <label class="radio-label"><input type="radio" name="overall-rating" id="overall-rating-3" value="3"
-                        required>&star;&star;&star;</label>
-                <label class="radio-label"><input type="radio" name="overall-rating" id="overall-rating-4" value="4"
-                        required>&star;&star;&star;&star;</label>
-                <label class="radio-label"><input type="radio" name="overall-rating" id="overall-rating-5" value="5"
-                        required>&star;&star;&star;&star;&star;</label>
+                <label class="radio-label" for="overall-rating-1">&star;</label>
+                <input type="radio" name="overall-rating" id="overall-rating-1" value="1" required>
+                <label class="radio-label" for="overall-rating-2">&star;&star;</label>
+                <input type="radio" name="overall-rating" id="overall-rating-2" value="2" required>
+                <label class="radio-label" for="overall-rating-3">&star;&star;&star;</label>
+                <input type="radio" name="overall-rating" id="overall-rating-3" value="3" required>
+                <label class="radio-label" for="overall-rating-4">&star;&star;&star;&star;</label>
+                <input type="radio" name="overall-rating" id="overall-rating-4" value="4" required>
+                <label class="radio-label" for="overall-rating-5">&star;&star;&star;&star;&star;</label>
+                <input type="radio" name="overall-rating" id="overall-rating-5" value="5" required>
             </div>
             <label for="date-of-instalation">Date of Instalation</label>
             <input type="date" name="date-of-instalation" id="date-of-instalation" class="form-field" required>
@@ -47,13 +47,15 @@
                 <br>
                 (Check all that apply)
             </p>
-            <div class="form-field-container">
-                <label><input type="checkbox" name="durability" id="durability" value="Durability"> Durability</label>
-                <label><input type="checkbox" name="easy-of-use" id="ease-of-use" value="Ease of Use"> Ease of
-                    Use</label>
-                <label><input type="checkbox" name="perfomance" id="perfomance" value="Perfomance"> Perfomance</label>
-                <label><input type="checkbox" name="design" id="design" value="Design">
-                    Design</label>
+            <div class="form-field-container checkbox">
+                <input type="checkbox" name="durability" id="durability" value="Durability">
+                <label for="durability">Durability</label>
+                <input type="checkbox" name="easy-of-use" id="ease-of-use" value="Ease of Use">
+                <label for="ease-of-use">Ease of Use</label>
+                <input type="checkbox" name="perfomance" id="perfomance" value="Perfomance">
+                <label for="perfomance">Perfomance</label>
+                <input type="checkbox" name="design" id="design" value="Design">
+                <label for="design">Design</label>
             </div>
             <label for="written-review">Written Review <span class="optional-input">(Optional)</span></label>
             <textarea name="written-review" id="written-review" class="form-field"></textarea>

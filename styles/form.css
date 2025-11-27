@@ -105,13 +105,14 @@ label.radio-label {
     justify-content: space-between;
 }
 
-.optional-input {
-    color: var(--xanthous);
+.form-field-container.checkbox {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
 }
 
-label:has(input[type=checkbox]) {
-    display: flex;
-    align-items: center;
+.optional-input {
+    color: var(--xanthous);
 }
 
 input[type=checkbox] {
@@ -123,4 +124,10 @@ input[type=submit] {
     background-color: var(--blood-red);
     color: var(--alice-blue);
     border: none;
+}
+
+@media screen and (min-width:512px) {
+    main {
+        padding: 24px;
+    }
 }
