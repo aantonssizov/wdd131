@@ -1,0 +1,21 @@
+:root {
+    --ink-black: #0d1321;
+    --snow: #fffaff;
+    --emerald: #49d49d;
+    --deep-saffron: hsla(34, 100%, 54%, 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--emerald);
+}
+
+body {
+    background-color: var(--ink-black);
+    color: var(--snow);
+    font-family: "Roboto", sans-serif;
+}
