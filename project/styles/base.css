@@ -15,7 +15,109 @@ h6 {
 }
 
 body {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+body,
+header,
+nav,
+ul,
+main,
+footer {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header,
+footer {
     background-color: var(--ink-black);
     color: var(--snow);
-    font-family: "Roboto", sans-serif;
+    padding: 8px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+span.title {
+    font-size: 1.75rem;
+    color: var(--emerald);
+}
+
+nav {
+    background-color: var(--emerald);
+    color: var(--ink-black);
+    padding: 8px;
+}
+
+nav .container {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+nav .container a {
+    color: var(--ink-black);
+    text-decoration: none;
+    font-size: 1.15rem;
+    transition: text-decoration ease-in .5s;
+}
+
+nav .container a:hover {
+    text-decoration: underline;
+    transition: text-decoration ease-in .5s;
+}
+
+footer .container form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+footer .container form input,
+footer .container form textarea {
+    padding: 8px;
+}
+
+footer .container form button {
+    padding: 8px;
+    background-color: var(--emerald);
+    border: none;
+    border-radius: 3px;
+    color: var(--ink-black);
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 960px;
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+
+    footer .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    footer .container form {
+        grid-column: 1 / 3;
+    }
+
+    footer p:last-of-type {
+        text-align: right;
+    }
 }

@@ -1,0 +1,7 @@
+main .container h1 {
+    color: var(--ink-black);
+}
+
+main {
+    padding: 8px;
+}

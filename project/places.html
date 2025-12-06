@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places - BikeThroughGermany</title>
+    <meta name="description" content="Places page for BikeThroughGermany">
+    <meta name="author" content="Anton Syzov">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/places.css">
+    <script src="scripts/places.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="images/bike.svg" alt="Logo" width="96" height="96">
+            <span class="title">BikeThroughGermany</span>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <a href="index.html">Home</a>
+            <a href="places.html">Places</a>
+            <a href="routes.html">Routes</a>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h1>Places</h1>
+            <p>Here is the list for top 10 places in Germany that is popular among cyclers</p>
+            <div class="places-container"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <form action="thankyou.html" method="get">
+                <h2>Share your experience!</h2>
+                <label for="name">Your name (required):</label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">Your email:</label>
+                <input type="email" name="email" id="email">
+                <label for="experience">Your experience (required):</label>
+                <textarea name="experience" id="experience" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <p>&copy;2025 - Anton Syzov</p>
+            <p>Final project for WDD131 class</p>
+        </div>
+    </footer>
+</body>
+
+</html>

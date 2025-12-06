@@ -1,0 +1,45 @@
+main {
+    padding: 8px;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+main .container h1 {
+    color: var(--ink-black);
+}
+
+main .container h1,
+main .container p {
+    margin: 0;
+}
+
+label[for=routePoints] {
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+
+select {
+    padding: 8px;
+}
+
+select:focus {
+    outline-color: var(--ink-black);
+}
+
+option {
+    padding: 8px;
+}
+
+button#make-a-route {
+    padding: 8px;
+    background-color: var(--emerald);
+    border: none;
+    border-radius: 3px;
+    color: var(--ink-black);
+    font-size: 1.15rem;
+    font-weight: bold;
+}
